@@ -1,0 +1,37 @@
+
+<app-search></app-search>
+<ul>
+  <li *ngFor="let board of boards">
+    <a routerLink="/board/{{board.id}}">
+      <img [src]="board.imageUrl" [alt]="board.name"/>
+      <div class="content">
+        <div class="name">
+          {{board.name}}
+        </div>
+        <span class="favourite {{board.favourite?'':'not'}}">❤︎</span>
+        <div class="stars">
+         <star-rating [value]="board.stars"
+         [totalstars]="5"
+         checkedcolor="black"
+         uncheckedcolor="grey"
+         size="22px"
+         [readonly]="true">
+        </star-rating>
+        </div>
+        <div class="description">
+          {{board.description}}
+        </div>
+        <div class="price">
+          <span>
+            {{board.price | currency}}
+          </span>
+        </div>
+        <div class="addtocart">
+          <button>Add to Cart</button>
+        </div>
+
+
+      </div>
+    </a>
+  </li>
+</ul>

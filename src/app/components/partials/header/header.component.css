@@ -1,0 +1,35 @@
+.navbar {
+  background-color: white !important;
+  background-color: #f0f0f0 !important;
+}
+
+nav {
+  padding-left: 0;
+  background-color: #f0f0f0 !important;
+}
+
+header {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 370px) {
+  header {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 990px) {
+  header {
+    padding: 0;
+  }
+}
+ul li:hover {
+  background-color: #eb6228;
+  border-radius: 2rem;
+}
+ul li:hover a {
+  color: white;
+}/*# sourceMappingURL=header.component.css.map */
